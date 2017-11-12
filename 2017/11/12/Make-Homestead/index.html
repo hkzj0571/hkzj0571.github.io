@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="简单的介绍下，在ubuntu中安装配置Lnmp环境的搭建。。。。。">
+<meta name="description" content="简单的介绍下，在Windows下安装Homestead。。。。。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu  安装Lnmp">
-<meta property="og:url" content="http://yoursite.com/2017/09/25/install-Lnmp/index.html">
+<meta property="og:title" content="Windows下搭建Homestead环境">
+<meta property="og:url" content="http://yoursite.com/2017/11/12/Make-Homestead/index.html">
 <meta property="og:site_name" content="HuKe">
-<meta property="og:description" content="简单的介绍下，在ubuntu中安装配置Lnmp环境的搭建。。。。。">
+<meta property="og:description" content="简单的介绍下，在Windows下安装Homestead。。。。。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-25T01:57:59.676Z">
+<meta property="og:updated_time" content="2017-11-12T14:48:12.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu  安装Lnmp">
-<meta name="twitter:description" content="简单的介绍下，在ubuntu中安装配置Lnmp环境的搭建。。。。。">
+<meta name="twitter:title" content="Windows下搭建Homestead环境">
+<meta name="twitter:description" content="简单的介绍下，在Windows下安装Homestead。。。。。">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/25/install-Lnmp/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/12/Make-Homestead/"/>
 
 
 
 
 
-  <title>Ubuntu  安装Lnmp | HuKe</title>
+  <title>Windows下搭建Homestead环境 | HuKe</title>
   
 
 
@@ -264,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/install-Lnmp/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/12/Make-Homestead/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hu ke">
@@ -281,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu  安装Lnmp</h1>
+          <h1 class="post-title" itemprop="name headline">Windows下搭建Homestead环境</h1>
         
 
         <div class="post-meta">
@@ -293,8 +293,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-25T09:11:02+08:00">
-                2017-09-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-12T22:45:47+08:00">
+                2017-11-12
               </time>
             
 
@@ -353,20 +353,28 @@
       
 
       
-        <p>简单的介绍下，在ubuntu中安装配置Lnmp环境的搭建。。。。。</p>
+        <p>简单的介绍下，在Windows下安装Homestead。。。。。</p>
 <a id="more"></a>
-<p>正式安装之前，先执行更新安装包</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div></pre></td></tr></table></figure>
-<h1 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nginx</div></pre></td></tr></table></figure>
-<p>安装完成之后，在浏览器中输入服务器的公网IP，即可看到<code>Welcome to Nginx</code>,即成功安装Nginx</p>
-<h1 id="安装Mysql"><a href="#安装Mysql" class="headerlink" title="安装Mysql"></a>安装Mysql</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install mysql-server mysql-client</div></pre></td></tr></table></figure>
-<p>安装过程中，输入两次密码即可</p>
-<h1 id="安装PHP"><a href="#安装PHP" class="headerlink" title="安装PHP"></a>安装PHP</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install php5-fpm php5-cli php5-mcrypt php5-curl</div></pre></td></tr></table></figure>
-<h2 id="配置PHP"><a href="#配置PHP" class="headerlink" title="配置PHP"></a>配置PHP</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/php5/fpm/php.ini</div></pre></td></tr></table></figure>
-<p>打开PHP配置文件，找到cgi.fix_pathinfo选项，去掉它前面的注释分号;，然后将它的值设置为0,如下<br><code>cgi.fix_pathinfo=0</code></p>
-<h2 id="启用php5-mcrypt"><a href="#启用php5-mcrypt" class="headerlink" title="启用php5-mcrypt"></a>启用php5-mcrypt</h2><p><code>sudo php5enmod mcrypt</code></p>
-<h2 id="重启php5-fpm"><a href="#重启php5-fpm" class="headerlink" title="重启php5-fpm"></a>重启php5-fpm</h2><p><code>sudo service php5-fpm restart</code></p>
-<p>到这里，你已经成功安装Lnmp环境，O(∩_∩)O~~~</p>
+<h1 id="第一步先下载-安装VirtualBox-Vagrant"><a href="#第一步先下载-安装VirtualBox-Vagrant" class="headerlink" title="第一步先下载/安装VirtualBox  + Vagrant"></a>第一步先下载/安装<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="external">VirtualBox</a>  + <a href="http://www.vagrantup.com/downloads.html" target="_blank" rel="external">Vagrant</a></h1><p>![<a href="https://dn-phphub.qbox.me/uploads/images/201711/12/19875/5zX2Gk4anM.png" target="_blank" rel="external">https://dn-phphub.qbox.me/uploads/images/201711/12/19875/5zX2Gk4anM.png</a>]</p>
+<h1 id="第二步下载homestead镜像"><a href="#第二步下载homestead镜像" class="headerlink" title="第二步下载homestead镜像"></a>第二步下载homestead镜像</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vagrant box add laravel/homestead</div></pre></td></tr></table></figure>
+<p>由于在国内所以你懂得，不可能下载成功的。。。<br>参考<a href="https://laravel-china.org/articles/6672/solving-the-problem-that-homestead-foreign-mirror-cannot-download" target="_blank" rel="external">解决 Homestead 国外镜像无法下载问题</a><br>链接: <a href="https://pan.baidu.com/s/1kVR70CR" target="_blank" rel="external">https://pan.baidu.com/s/1kVR70CR</a> 密码: q4xy<br>下载解压。。。<br>![<a href="https://dn-phphub.qbox.me/uploads/images/201711/12/19875/zU3RuAhXRv.jpg" target="_blank" rel="external">https://dn-phphub.qbox.me/uploads/images/201711/12/19875/zU3RuAhXRv.jpg</a>]</p>
+<p>打开 <code>metadata.json</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&#123;</div><div class="line">    &quot;name&quot;: &quot;laravel/homestead&quot;,</div><div class="line">    &quot;versions&quot;: </div><div class="line">    [</div><div class="line">        &#123;</div><div class="line">            &quot;version&quot;: &quot;4.0.0&quot;,</div><div class="line">            &quot;providers&quot;: [</div><div class="line">                &#123;</div><div class="line">                  &quot;name&quot;: &quot;virtualbox&quot;,</div><div class="line">                  &quot;url&quot;: &quot;F\:laravelhomestead/virtualbox.box&quot;</div><div class="line">                &#125;</div><div class="line">            ]</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>将<code>url</code>修改成自己对应的地址</p>
+<h1 id="第三步克隆homestead配置文件"><a href="#第三步克隆homestead配置文件" class="headerlink" title="第三步克隆homestead配置文件"></a>第三步克隆homestead配置文件</h1><p>在git bash根目录下<br><code>https://github.com/laravel/homestead.git</code></p>
+<p>下载完成后执行<br><code>git checkout v6.5.0</code></p>
+<p>选择完版本之后再执行<br><code>bash init.sh</code><br>执行完成后你就会看见<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ bash init.sh</div><div class="line">Homestead initialized!</div></pre></td></tr></table></figure></p>
+<p>接下来我们配置一下<code>Homestead.yaml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">ip: &quot;192.168.10.10&quot;</div><div class="line">memory: 2048</div><div class="line">cpus: 1</div><div class="line">provider: virtualbox</div><div class="line"></div><div class="line">authorize: ~/.ssh/id_rsa.pub</div><div class="line"></div><div class="line">keys:</div><div class="line">    - ~/.ssh/id_rsa</div><div class="line"></div><div class="line">folders:</div><div class="line">    - map: D:/phpStudy/WWW   您的项目库地址</div><div class="line">      to: /home/vagrant/code</div><div class="line"></div><div class="line">sites:</div><div class="line">    - map: homestead.test 您的站点配置</div><div class="line">      to: /home/vagrant/code/Travel/public</div><div class="line"></div><div class="line">databases:</div><div class="line">    - homestead</div></pre></td></tr></table></figure>
+<h1 id="第四步添加BOX"><a href="#第四步添加BOX" class="headerlink" title="第四步添加BOX"></a>第四步添加BOX</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">vagrant box add laravel/homestead your/box/path</div></pre></td></tr></table></figure>
+<p>注意<code>your/box/path</code>填写Windows系统相对路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ vagrant box add laravel/homestead /f/laravelhomestead/metadata.json</div><div class="line">==&gt; box: Loading metadata for box &apos;F:/laravelhomestead/metadata.json&apos;</div><div class="line">    box: URL: file:///F:/laravelhomestead/metadata.json</div><div class="line">==&gt; box: Adding box &apos;laravel/homestead&apos; (v4.0.0) for provider: virtualbox</div><div class="line">    box: Downloading: F:laravelhomestead/virtualbox.box</div><div class="line">    box:</div><div class="line">==&gt; box: Successfully added box &apos;laravel/homestead&apos; (v4.0.0) for &apos;virtualbox&apos;!</div></pre></td></tr></table></figure>
+<p>看到<code>Successfully</code>您已成功完成Homestead配置</p>
+<h1 id="Finally-开启虚拟机"><a href="#Finally-开启虚拟机" class="headerlink" title="Finally 开启虚拟机"></a>Finally 开启虚拟机</h1><p><code>vagrant up</code></p>
+<p>在系统hosts中加入<code>192.168.10.10    homestead.app</code></p>
+<p>再您的浏览器运行<code>homestead.app</code></p>
+<p>![<a href="https://dn-phphub.qbox.me/uploads/images/201711/12/19875/dRLyVDXcDd.jpg" target="_blank" rel="external">https://dn-phphub.qbox.me/uploads/images/201711/12/19875/dRLyVDXcDd.jpg</a>]</p>
+<p><strong>尽情享用吧!O(∩_∩)O</strong></p>
 
       
     </div>
@@ -401,8 +409,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/21/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/09/25/make-phpmyadmin/" rel="next" title="Lnmp中安装PHPMyadmin">
+                <i class="fa fa-chevron-left"></i> Lnmp中安装PHPMyadmin
               </a>
             
           </div>
@@ -410,10 +418,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/25/make-phpmyadmin/" rel="prev" title="Lnmp中安装PHPMyadmin">
-                Lnmp中安装PHPMyadmin <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -541,7 +545,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Nginx"><span class="nav-number">1.</span> <span class="nav-text">安装Nginx</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装Mysql"><span class="nav-number">2.</span> <span class="nav-text">安装Mysql</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装PHP"><span class="nav-number">3.</span> <span class="nav-text">安装PHP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置PHP"><span class="nav-number">3.1.</span> <span class="nav-text">配置PHP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用php5-mcrypt"><span class="nav-number">3.2.</span> <span class="nav-text">启用php5-mcrypt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重启php5-fpm"><span class="nav-number">3.3.</span> <span class="nav-text">重启php5-fpm</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一步先下载-安装VirtualBox-Vagrant"><span class="nav-number">1.</span> <span class="nav-text">第一步先下载/安装VirtualBox  + Vagrant</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二步下载homestead镜像"><span class="nav-number">2.</span> <span class="nav-text">第二步下载homestead镜像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三步克隆homestead配置文件"><span class="nav-number">3.</span> <span class="nav-text">第三步克隆homestead配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四步添加BOX"><span class="nav-number">4.</span> <span class="nav-text">第四步添加BOX</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Finally-开启虚拟机"><span class="nav-number">5.</span> <span class="nav-text">Finally 开启虚拟机</span></a></li></ol></div>
             
 
           </div>
