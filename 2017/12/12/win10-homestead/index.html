@@ -100,7 +100,7 @@
 <meta property="og:image" content="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/X9RWSI1BlW.png">
 <meta property="og:image" content="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/tWQ7I0jikg.png">
 <meta property="og:image" content="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/9EbWMSN1lV.png">
-<meta property="og:updated_time" content="2017-12-12T15:31:25.239Z">
+<meta property="og:updated_time" content="2017-12-12T15:36:27.571Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于WIN10系统更新后Homestead无法启动的坑！">
 <meta name="twitter:description" content="今天在WIN10每天的骚扰下终于点错了，，，结果自动更新了，更新完后悲剧真的来了….">
@@ -357,11 +357,12 @@
       
 
       
-        <p>今天在<code>WIN10</code>每天的骚扰下终于点错了，，，结果自动更新了，更新完后悲剧真的来了….<br><a id="more"></a><br>:cry:<br><img src="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/X9RWSI1BlW.png" alt="file"></p>
+        <p>今天在<code>WIN10</code>每天的骚扰下终于点错了，，，结果自动更新了，更新完后悲剧真的来了….<br><a id="more"></a></p>
+<p><img src="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/X9RWSI1BlW.png" alt="file"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">There was an error while executing `VBoxManage`, a CLI used by Vagrant</div><div class="line">for controlling VirtualBox. The command and stderr is shown below.</div><div class="line"></div><div class="line">Command: [&quot;startvm&quot;, &quot;152cca03-0b0a-4e57-b501-b694821a2629&quot;, &quot;--type&quot;, &quot;headless&quot;]</div><div class="line"></div><div class="line">Stderr: VBoxManage.exe: error: The virtual machine &apos;homestead-7&apos; has terminated unexpectedly during startup with exit code -1073741819 (0xc0000005).  More details may be available in &apos;C:\Users\ZhangY\VirtualBox VMs\homestead-7\Logs\VBoxHardening.log&apos;</div><div class="line">VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component MachineWrap, interface IMachine</div></pre></td></tr></table></figure>
 <p>查了好多地方才发现原来系统更新后盘符的<code>UUID</code>，发生了变化.<br><img src="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/tWQ7I0jikg.png" alt="file"></p>
 <p>最简单的做法 打开你的<code>VirtualBox</code>安装包进行修复<br><img src="https://dn-phphub.qbox.me/uploads/images/201712/12/19875/9EbWMSN1lV.png" alt="file"></p>
-<p>重启之后再终端进行<code>vagrant up</code> 您又可以开心的使用Homestead了 :smile: :smile: </p>
+<p>重启之后再终端进行<code>vagrant up</code> 您又可以开心的使用Homestead了</p>
 
       
     </div>
